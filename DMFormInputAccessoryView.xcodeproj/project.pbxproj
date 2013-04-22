@@ -8,22 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		E61DFABC1724F5EF000D9C3E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E61DFABB1724F5EF000D9C3E /* Foundation.framework */; };
-		E61DFAC11724F5EF000D9C3E /* DMFormInputAccessoryView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E61DFAC01724F5EF000D9C3E /* DMFormInputAccessoryView.h */; };
 		E61DFAC31724F5EF000D9C3E /* DMFormInputAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = E61DFAC21724F5EF000D9C3E /* DMFormInputAccessoryView.m */; };
+		E61DFACA1724F634000D9C3E /* DMFormInputAccessoryView.h in Headers */ = {isa = PBXBuildFile; fileRef = E61DFAC01724F5EF000D9C3E /* DMFormInputAccessoryView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E61DFACC1724F63C000D9C3E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E61DFACB1724F63C000D9C3E /* UIKit.framework */; };
+		E61DFACE1724F641000D9C3E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E61DFACD1724F641000D9C3E /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		E61DFAB61724F5EF000D9C3E /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/${PRODUCT_NAME}";
-			dstSubfolderSpec = 16;
-			files = (
-				E61DFAC11724F5EF000D9C3E /* DMFormInputAccessoryView.h in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E61DFAB81724F5EF000D9C3E /* libDMFormInputAccessoryView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDMFormInputAccessoryView.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -31,6 +20,8 @@
 		E61DFABF1724F5EF000D9C3E /* DMFormInputAccessoryView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DMFormInputAccessoryView-Prefix.pch"; sourceTree = "<group>"; };
 		E61DFAC01724F5EF000D9C3E /* DMFormInputAccessoryView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMFormInputAccessoryView.h; sourceTree = "<group>"; };
 		E61DFAC21724F5EF000D9C3E /* DMFormInputAccessoryView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMFormInputAccessoryView.m; sourceTree = "<group>"; };
+		E61DFACB1724F63C000D9C3E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E61DFACD1724F641000D9C3E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +29,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E61DFACE1724F641000D9C3E /* CoreGraphics.framework in Frameworks */,
+				E61DFACC1724F63C000D9C3E /* UIKit.framework in Frameworks */,
 				E61DFABC1724F5EF000D9C3E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,6 +58,8 @@
 		E61DFABA1724F5EF000D9C3E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E61DFACD1724F641000D9C3E /* CoreGraphics.framework */,
+				E61DFACB1724F63C000D9C3E /* UIKit.framework */,
 				E61DFABB1724F5EF000D9C3E /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -90,6 +85,17 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		E61DFAC91724F630000D9C3E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E61DFACA1724F634000D9C3E /* DMFormInputAccessoryView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		E61DFAB71724F5EF000D9C3E /* DMFormInputAccessoryView */ = {
 			isa = PBXNativeTarget;
@@ -97,7 +103,7 @@
 			buildPhases = (
 				E61DFAB41724F5EF000D9C3E /* Sources */,
 				E61DFAB51724F5EF000D9C3E /* Frameworks */,
-				E61DFAB61724F5EF000D9C3E /* CopyFiles */,
+				E61DFAC91724F630000D9C3E /* Headers */,
 			);
 			buildRules = (
 			);
@@ -207,7 +213,9 @@
 				GCC_PREFIX_HEADER = "DMFormInputAccessoryView/DMFormInputAccessoryView-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = DMFormInputAccessoryView;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -219,7 +227,9 @@
 				GCC_PREFIX_HEADER = "DMFormInputAccessoryView/DMFormInputAccessoryView-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = DMFormInputAccessoryView;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
