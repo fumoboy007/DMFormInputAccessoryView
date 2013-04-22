@@ -1,0 +1,249 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E61DFABC1724F5EF000D9C3E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E61DFABB1724F5EF000D9C3E /* Foundation.framework */; };
+		E61DFAC11724F5EF000D9C3E /* DMFormInputAccessoryView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E61DFAC01724F5EF000D9C3E /* DMFormInputAccessoryView.h */; };
+		E61DFAC31724F5EF000D9C3E /* DMFormInputAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = E61DFAC21724F5EF000D9C3E /* DMFormInputAccessoryView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E61DFAB61724F5EF000D9C3E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				E61DFAC11724F5EF000D9C3E /* DMFormInputAccessoryView.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E61DFAB81724F5EF000D9C3E /* libDMFormInputAccessoryView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDMFormInputAccessoryView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E61DFABB1724F5EF000D9C3E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E61DFABF1724F5EF000D9C3E /* DMFormInputAccessoryView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DMFormInputAccessoryView-Prefix.pch"; sourceTree = "<group>"; };
+		E61DFAC01724F5EF000D9C3E /* DMFormInputAccessoryView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMFormInputAccessoryView.h; sourceTree = "<group>"; };
+		E61DFAC21724F5EF000D9C3E /* DMFormInputAccessoryView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMFormInputAccessoryView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E61DFAB51724F5EF000D9C3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E61DFABC1724F5EF000D9C3E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E61DFAAF1724F5EF000D9C3E = {
+			isa = PBXGroup;
+			children = (
+				E61DFABD1724F5EF000D9C3E /* DMFormInputAccessoryView */,
+				E61DFABA1724F5EF000D9C3E /* Frameworks */,
+				E61DFAB91724F5EF000D9C3E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E61DFAB91724F5EF000D9C3E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E61DFAB81724F5EF000D9C3E /* libDMFormInputAccessoryView.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E61DFABA1724F5EF000D9C3E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E61DFABB1724F5EF000D9C3E /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E61DFABD1724F5EF000D9C3E /* DMFormInputAccessoryView */ = {
+			isa = PBXGroup;
+			children = (
+				E61DFAC01724F5EF000D9C3E /* DMFormInputAccessoryView.h */,
+				E61DFAC21724F5EF000D9C3E /* DMFormInputAccessoryView.m */,
+				E61DFABE1724F5EF000D9C3E /* Supporting Files */,
+			);
+			path = DMFormInputAccessoryView;
+			sourceTree = "<group>";
+		};
+		E61DFABE1724F5EF000D9C3E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E61DFABF1724F5EF000D9C3E /* DMFormInputAccessoryView-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E61DFAB71724F5EF000D9C3E /* DMFormInputAccessoryView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E61DFAC61724F5EF000D9C3E /* Build configuration list for PBXNativeTarget "DMFormInputAccessoryView" */;
+			buildPhases = (
+				E61DFAB41724F5EF000D9C3E /* Sources */,
+				E61DFAB51724F5EF000D9C3E /* Frameworks */,
+				E61DFAB61724F5EF000D9C3E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DMFormInputAccessoryView;
+			productName = DMFormInputAccessoryView;
+			productReference = E61DFAB81724F5EF000D9C3E /* libDMFormInputAccessoryView.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E61DFAB01724F5EF000D9C3E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Darren Mo";
+			};
+			buildConfigurationList = E61DFAB31724F5EF000D9C3E /* Build configuration list for PBXProject "DMFormInputAccessoryView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E61DFAAF1724F5EF000D9C3E;
+			productRefGroup = E61DFAB91724F5EF000D9C3E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E61DFAB71724F5EF000D9C3E /* DMFormInputAccessoryView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E61DFAB41724F5EF000D9C3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E61DFAC31724F5EF000D9C3E /* DMFormInputAccessoryView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E61DFAC41724F5EF000D9C3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E61DFAC51724F5EF000D9C3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E61DFAC71724F5EF000D9C3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/DMFormInputAccessoryView.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DMFormInputAccessoryView/DMFormInputAccessoryView-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E61DFAC81724F5EF000D9C3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/DMFormInputAccessoryView.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DMFormInputAccessoryView/DMFormInputAccessoryView-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E61DFAB31724F5EF000D9C3E /* Build configuration list for PBXProject "DMFormInputAccessoryView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E61DFAC41724F5EF000D9C3E /* Debug */,
+				E61DFAC51724F5EF000D9C3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E61DFAC61724F5EF000D9C3E /* Build configuration list for PBXNativeTarget "DMFormInputAccessoryView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E61DFAC71724F5EF000D9C3E /* Debug */,
+				E61DFAC81724F5EF000D9C3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E61DFAB01724F5EF000D9C3E /* Project object */;
+}
