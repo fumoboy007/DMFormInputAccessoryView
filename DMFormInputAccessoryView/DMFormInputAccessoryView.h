@@ -26,4 +26,6 @@
 
 @property (weak, nonatomic) id <DMFormInputAccessoryViewDataSource> dataSource;
 
+- (void)reloadData;
+
 @end

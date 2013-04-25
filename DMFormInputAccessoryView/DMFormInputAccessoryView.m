@@ -102,4 +102,10 @@ typedef NS_ENUM(NSUInteger, PrevNextSegment) {
 	[_attachedResponder resignFirstResponder];
 }
 
+#pragma mark - Reloading data
+
+- (void)reloadData {
+	[self configurePrevNextSegmentedControl];
+}
+
 @end
