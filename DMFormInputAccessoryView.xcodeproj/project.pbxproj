@@ -121,7 +121,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0460;
-				ORGANIZATIONNAME = "Darren Mo";
+				ORGANIZATIONNAME = "";
 			};
 			buildConfigurationList = E61DFAB31724F5EF000D9C3E /* Build configuration list for PBXProject "DMFormInputAccessoryView" */;
 			compatibilityVersion = "Xcode 3.2";
