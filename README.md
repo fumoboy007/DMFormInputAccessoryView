@@ -4,7 +4,7 @@ DMFormInputAccessoryView
 What it does
 ------------
 
-DMFormInputAccessoryView provides an input accessory view for `UITextField`s (or other `UIResponder`s) that coordinates a data source and a toolbar with Previous/Next and Done buttons.
+DMFormInputAccessoryView provides an input accessory view for `UITextField`'s (or other `UIResponder`'s) that coordinates a data source and a toolbar with Previous/Next and Done buttons.
 
 Here's what it looks like by default:  
 ![Screenshot of toolbar with Previous/Next and Done buttons](README/toolbarScreenshot.png)
