@@ -12,9 +12,9 @@ Here's what it looks like by default:
 How to use it
 -------------
 
-The interface is very simple. You implement the `DMFormInputAccessoryViewDataSource` protocol in one of your classes (say your view controller class). To configure the input accessory view, you set the `dataSource` property to your data source and the `attachedResponder` property to your `UIResponder` (your text field or whatever). When something changes that modifies the enabled state of the buttons, you call `reloadData`.
+The interface is very simple. You implement the `DMFormInputAccessoryViewDataSource` protocol in one of your classes (say your view controller class). To configure the input accessory view, you set the `dataSource` property to your data source and the `attachedResponder` property to your `UIResponder` (your text field or whatever). When something changes that modifies the enabled state of the buttons, you call `reloadData`. I also added a convenience category so that you don't have to cast every time. =)
 
-To include it in your project, you can just take the `DMFormInputAccessoryView.h` and `DMFormInputAccessoryView.m` files and drop them into your project. Alternatively, you can embed this project as a subproject and add `$(CONFIGURATION_BUILD_DIR)` and `"$(BUILD_ROOT)/../IntermediateBuildFilesPath/UninstalledProducts"` to your `Header Search Paths` build setting.
+To include it in your project, you can just take the `DMFormInputAccessoryView.h`/`DMFormInputAccessoryView.m` files (and `UIResponder+DMFormInputAccessoryView.h`/`UIResponder+DMFormInputAccessoryView.m` if you want) and drop them into your project. Alternatively, you can embed this project as a subproject and add `$(CONFIGURATION_BUILD_DIR)` and `"$(BUILD_ROOT)/../IntermediateBuildFilesPath/UninstalledProducts"` to your `Header Search Paths` build setting.
 
 License
 -------
