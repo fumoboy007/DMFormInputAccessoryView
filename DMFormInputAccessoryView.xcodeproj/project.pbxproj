@@ -12,6 +12,8 @@
 		E61DFACA1724F634000D9C3E /* DMFormInputAccessoryView.h in Headers */ = {isa = PBXBuildFile; fileRef = E61DFAC01724F5EF000D9C3E /* DMFormInputAccessoryView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E61DFACC1724F63C000D9C3E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E61DFACB1724F63C000D9C3E /* UIKit.framework */; };
 		E61DFACE1724F641000D9C3E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E61DFACD1724F641000D9C3E /* CoreGraphics.framework */; };
+		E6F35AEE1736CCAA00C17AA4 /* UIResponder+DMFormInputAccessoryView.h in Headers */ = {isa = PBXBuildFile; fileRef = E6F35AEC1736CCAA00C17AA4 /* UIResponder+DMFormInputAccessoryView.h */; };
+		E6F35AEF1736CCAA00C17AA4 /* UIResponder+DMFormInputAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F35AED1736CCAA00C17AA4 /* UIResponder+DMFormInputAccessoryView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		E61DFAC21724F5EF000D9C3E /* DMFormInputAccessoryView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMFormInputAccessoryView.m; sourceTree = "<group>"; };
 		E61DFACB1724F63C000D9C3E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E61DFACD1724F641000D9C3E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E6F35AEC1736CCAA00C17AA4 /* UIResponder+DMFormInputAccessoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+DMFormInputAccessoryView.h"; sourceTree = "<group>"; };
+		E6F35AED1736CCAA00C17AA4 /* UIResponder+DMFormInputAccessoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+DMFormInputAccessoryView.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,8 @@
 			children = (
 				E61DFAC01724F5EF000D9C3E /* DMFormInputAccessoryView.h */,
 				E61DFAC21724F5EF000D9C3E /* DMFormInputAccessoryView.m */,
+				E6F35AEC1736CCAA00C17AA4 /* UIResponder+DMFormInputAccessoryView.h */,
+				E6F35AED1736CCAA00C17AA4 /* UIResponder+DMFormInputAccessoryView.m */,
 				E61DFABE1724F5EF000D9C3E /* Supporting Files */,
 			);
 			path = DMFormInputAccessoryView;
@@ -91,6 +97,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E61DFACA1724F634000D9C3E /* DMFormInputAccessoryView.h in Headers */,
+				E6F35AEE1736CCAA00C17AA4 /* UIResponder+DMFormInputAccessoryView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E61DFAC31724F5EF000D9C3E /* DMFormInputAccessoryView.m in Sources */,
+				E6F35AEF1736CCAA00C17AA4 /* UIResponder+DMFormInputAccessoryView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
