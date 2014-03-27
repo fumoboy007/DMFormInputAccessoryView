@@ -37,14 +37,28 @@ typedef NS_ENUM(NSUInteger, PrevNextSegment) {
 - (id)initWithFrame:(CGRect)frame {
 	self = [super initWithFrame:frame];
 	
-	if (self) {
-		self.barStyle = UIBarStyleBlack;
-		self.translucent = YES;
-		
-		
+	if (self)
+    {
+        if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_6_1)
+        {
+            // makes sense in iOS 6.1 and below
+            // but iOS 7 is designed differently
+            self.barStyle = UIBarStyleBlack;
+        }
+        
+        self.translucent = YES;
+        
 		_prevNextSegmentedControl = [[UISegmentedControl alloc] initWithItems:@[@"Previous", @"Next"]];
 		
-		_prevNextSegmentedControl.segmentedControlStyle = UISegmentedControlStyleBar;
+        if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_6_1)
+        {
+            // this should only run for iOS 6.1 and below.
+            // newer versions could result in you having a very bad time.
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+            _prevNextSegmentedControl.segmentedControlStyle = UISegmentedControlStyleBar;
+#pragma clang diagnostic pop
+        }
 		_prevNextSegmentedControl.momentary = YES;
 		
 		[_prevNextSegmentedControl addTarget:self action:@selector(prevNextSegmentedControlValueChanged) forControlEvents:UIControlEventValueChanged];
