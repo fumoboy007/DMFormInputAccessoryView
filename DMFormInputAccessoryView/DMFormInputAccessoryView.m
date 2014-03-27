@@ -24,6 +24,14 @@
 #import "DMFormInputAccessoryView.h"
 
 
+#define IS_IOS_6_OR_LOWER (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_6_1)
+#define IGNORE_DEPRECATED_WARNING(statement) \
+	_Pragma("clang diagnostic push") \
+	_Pragma("clang diagnostic ignored \"-Wdeprecated-declarations\"") \
+		statement \
+	_Pragma("clang diagnostic pop")
+
+
 typedef NS_ENUM(NSUInteger, PrevNextSegment) {
 	PrevSegment = 0,
 	NextSegment
@@ -37,29 +45,19 @@ typedef NS_ENUM(NSUInteger, PrevNextSegment) {
 - (id)initWithFrame:(CGRect)frame {
 	self = [super initWithFrame:frame];
 	
-	if (self)
-    {
-        if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_6_1)
-        {
-            // makes sense in iOS 6.1 and below
-            // but iOS 7 is designed differently
-            self.barStyle = UIBarStyleBlack;
-        }
-        
-        self.translucent = YES;
-        
+	if (self) {
+		self.translucent = YES;
+		
+		if (IS_IOS_6_OR_LOWER)
+			self.barStyle = UIBarStyleBlack;
+		
+		
 		_prevNextSegmentedControl = [[UISegmentedControl alloc] initWithItems:@[@"Previous", @"Next"]];
 		
-        if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_6_1)
-        {
-            // this should only run for iOS 6.1 and below.
-            // newer versions could result in you having a very bad time.
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated-declarations"
-            _prevNextSegmentedControl.segmentedControlStyle = UISegmentedControlStyleBar;
-#pragma clang diagnostic pop
-        }
 		_prevNextSegmentedControl.momentary = YES;
+		
+		if (IS_IOS_6_OR_LOWER)
+			IGNORE_DEPRECATED_WARNING(_prevNextSegmentedControl.segmentedControlStyle = UISegmentedControlStyleBar);
 		
 		[_prevNextSegmentedControl addTarget:self action:@selector(prevNextSegmentedControlValueChanged) forControlEvents:UIControlEventValueChanged];
 		
@@ -102,21 +100,21 @@ typedef NS_ENUM(NSUInteger, PrevNextSegment) {
 
 - (void)prevNextSegmentedControlValueChanged {
 	switch (_prevNextSegmentedControl.selectedSegmentIndex) {
-		case PrevSegment:
-		{
+		case PrevSegment: {
 			UIResponder *previousResponder = [_dataSource previousResponderForFormInputAccessoryView:self];
 			
 			[previousResponder becomeFirstResponder];
-		}
-			break;
 			
-		case NextSegment:
-		{
+			break;
+		}
+			
+		case NextSegment: {
 			UIResponder *nextResponder = [_dataSource nextResponderForFormInputAccessoryView:self];
 			
 			[nextResponder becomeFirstResponder];
-		}
+			
 			break;
+		}
 			
 		default:
 			break;
