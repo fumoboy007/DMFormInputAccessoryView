@@ -9,7 +9,7 @@ DMFormInputAccessoryView provides an input accessory view for a `UITextField` (o
 Here's what it looks like in iOS 6 and below:  
 ![Screenshot of toolbar with Previous/Next and Done buttons - iOS 6.1 and below](README/toolbarScreenshot.png)
 
-And here's what is looks like in iOS 7 and above:
+Here's what is looks like in iOS 7 and above:
 ![Screenshot of toolbar with Previous/Next and Done buttons - iOS 7 and above](README/toolbarScreenshot-iOS7.png)
 
 How to use it
